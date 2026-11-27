@@ -5,12 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="" href="">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <nav class="navbar">
-        <div lobo>SENAI</div>
+        <div logo>SENAI</div>
+
+
+        <button class="menu-toggle" aria-label="abrir menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
         <ul class="nav-links">
             <li><a href="#">Ínicio</a></li>
             <li><a href="#">Conteúdo</a></li>
@@ -50,7 +59,93 @@
                 </div>
             </div>
         </section>
+
+        <section class="depoimentos">
+            <h2>O que dizem nossos alunos</h2>
+            <div class="depoimentos-grid">
+                <div class="depoimento">
+                    <img src="assets/aluno1.jpg" alt="Foto do aluno João">
+                    <p>"Aprender frontend ficou muitomais fácil com esse projeto. Agora consigo criar minhas próprias
+                        páginas!"</p>
+                    <span>João Pereira</span>
+                </div>
+                <div class="depoimento">
+                    <img src="assets/aluno2.jpg" alt="Foto da aluna Maria">
+                    <p>"As explicações são diretas e os me ajudaram a ajudaram a entender o que eu achava impossível."
+                    </p>
+                    <span>Maria Oliveira</span>
+                </div>
+                <div class="depoimento">
+                    <img src="assets/aluno3.png" alt="Foto da aluna Ana">
+                    <p>"O projeto me deu confiança para montar meu portfólio e participar de processos seletivos."</p>
+                    <span>Ana Costa</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="exemplos">
+            <h2>Exemplos Práticos</h2>
+            <p class="exemplos-descricao">Veja alguns projetos criados com os conceitos aprendidos nas aulas.</p>
+            <div class="exemplos-grid">
+                <div class="exemplo-card">
+                    <img src="assets/exemplo1.jpg" alt="Exemplo de página HTML">
+                    <h3>Portfólio Pessoal</h3>
+                    <p>Site de apresentação com HTML semântico e estilização com CSS moderno.</p>
+                </div>
+                <div class="exemplo-card">
+                    <img src="assets/exemplo2.jpg" alt="Exmplo de cardápio digital">
+                    <h3>Cardápio Digital</h3>
+                    <p>Projeto interativo com botões e imagens simulando um site de lanchonete.</p>
+                </div>
+                <div class="exemplo-card">
+                    <img src="assets/exemplo3.jpg" alt="Exemplo de conversor de moedas">
+                    <h3>Conversor de Moedas</h3>
+                    <p>Pequena aplicação com JavaScript para calcular conversões em tempo real.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="aprendizados">
+            <h2>Como Funciona o Aprendizado</h2>
+            <p class="aprendizado-descricao">Veja o passo a passo que você vai seguir para dominar o desenvolvimento Frontend.</p>
+            <div class="aprendizado-grid">
+                <div class="aprendizado">
+                    <h3>Portfólio Pessoal</h3>
+                    <p>Site de apresentação com HTML semântico e estilização com CSS moderno.</p>
+                </div>
+                <div class="aprendizado">
+                    <span>1</span>
+                    <h3>Cardápio Digital</h3>
+                    <p>Aprenda a estruturar páginas com semântica, acessibilidade e boas práticas.</p>
+                </div>
+                <div class="aprendizado">
+                    <span>2</span>
+                    <h3>Estilização com CSS</h3>
+                    <p>Crie layouts modernos com cores, fontes, espaçamentos e responsividade.</p>
+                </div>
+                <div class="aprendizado">
+                    <span>3</span>
+                    <h3>Interatividade com JavaScript</h3>
+                    <p>Adicione vida à sua página com eventos, manipulação de DOM e lógica de programação.</p>
+                </div>
+                <div class="aprendizado">
+                    <span>4</span>
+                    <h3>projeto Final</h3>
+                    <p>Coloque tudo em prática desenvolvendo um site completo e visualmente atrativo.</p>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <script>
+        const toggle = document.querySelector(".menu-toggle");
+        const navlinks = document.querySelector(".nav-links");
+
+        toggle.addEventListener("click", () => {
+            toggle.classList.toggle("active");
+            navlinks.classList.toggla("show");
+        });
+    </script>
 </body>
 
 </html>
